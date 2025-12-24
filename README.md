@@ -149,6 +149,8 @@ This project was developed exclusively for educational purposes as part of a per
 ---
 Copyright © 2025 Nazar Adamenko. All rights reserved.
 
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
 ### 💬 Support
 
 If you encounter issues:
