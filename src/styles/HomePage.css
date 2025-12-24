@@ -1,0 +1,249 @@
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #4a473d;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-image: url('../assets/map.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex !important; 
+  flex-direction: row !important; 
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.logo-section .logo {
+  color: #1e40af;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.search-section {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-grow: 1;
+}
+
+.search-wrapper {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.search-results-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.result-item a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.result-item a:hover {
+  background: #f8fafc;
+}
+
+.result-title {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.result-category {
+  font-size: 0.75rem;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.search-input {
+  flex: 1;
+  height: 40px;
+  padding: 0 15px;
+  border: 1px solid #cbd5e1;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #1e40af;
+}
+
+.search-btn {
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  padding: 0 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.search-btn:hover {
+  background: #1e3a8a;
+}
+
+.auth-section {
+  flex-shrink: 0;
+}
+
+.login-btn {
+  background: #1e40af;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.login-btn:hover {
+  background: #1e3a8a;
+  transform: translateY(-1px);
+}
+
+.main-content {
+  flex: 1;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.main-heading h2 {
+  color: #1e293b;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  color: #af7a1e !important;
+  font-size: 1.5rem !important;
+  display: block;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(0,0,0,0.1);
+  margin: 30px 0;
+}
+
+.description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #1e293b;
+}
+
+.main-cta-button {
+  background: #dc2626;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.main-cta-button:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .logo {
+    font-size: 1.1rem !important;
+  }
+
+  .search-section {
+    max-width: none;
+  }
+
+  .search-input::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .login-btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1rem !important;
+  }
+}
